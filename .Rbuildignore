@@ -1,0 +1,10 @@
+^\.github$
+^pacta\.portfolio\.allocate\.Rproj$
+^\.Rproj\.user$
+^README\.md$
+^LICENSE\.md$
+^bin$
+^vignettes/articles$
+^\.lintr$
+^README\.Rmd$
+^_pkgdown\.yml$
