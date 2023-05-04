@@ -69,7 +69,7 @@ determine_tdm_variables <- function(start_year) {
   list(
     t0 = start_year,
     delta_t1 = 5,
-    delta_t2 = 10,
+    delta_t2 = 9,
     additional_groups = c("scenario_source", "scenario", "allocation", "equity_market", "scenario_geography"),
     scenarios = tdm_scenarios()
   )
