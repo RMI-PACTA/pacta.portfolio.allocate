@@ -1,5 +1,9 @@
 # pacta.portfolio.allocate (development version)
 
+* loses `tdm_scenarios()` and `determine_tdm_variables()` in favour of defining 
+  these parameters explicitly in `workflow.transition.monitor` 
+  (#3). 
+
 * `tdm_conditions_met` gains arguments `data`, `t0`, `delta_t1`, `delta_t2`, `scenarios` and `additional groups`. The function now has more expanded and comprehensive validation (#17). 
 
 * adds new functions `get_entity_info()` and `left_join_entity_info()` to facilitate reading and merging in entity info from an on-disk SQLite database if available
