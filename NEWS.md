@@ -12,8 +12,6 @@
 
 * lose the exported function `data_includes_tdm_scenarios()`.
 
-* `determine_tdm_variables` now sets `delta_t2 = 10` (used to be `9`).
-
 * `quit_if_no_pacta_relevant_data()` now also generates a PDF with the error message in place of the executive summary (#212).
 
 * `quit_if_no_pacta_relevant_data()` now fails on Bonds with no ALD in fin_sector (#194).
