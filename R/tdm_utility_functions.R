@@ -1,13 +1,3 @@
-#' A helper function to keep track of the scenario(s) relevant for the TDM.
-#'
-#' @return A character vector, containing the `scenario` value(s) relevant to the TDM.
-#'
-#' @export
-
-tdm_scenarios <- function() {
-  c("IPR FPS 2021")
-}
-
 #' A helper function to determine what conditions should be met for the TDM to
 #' be generated
 #'
@@ -53,24 +43,4 @@ tdm_conditions_met <- function(data,
   valid_years_available <- all(has_useable_data_per_group$has_all_years)
 
   return(all(valid_project_code, valid_data_available, valid_years_available))
-}
-
-#' A helper function to generate and keep track of all input parameters to the
-#' `calculate_tdm` function.
-#'
-#' @param start_year An integer value, indicating the start year of the PACTA
-#' run.
-#'
-#' @return A named list containing all relevant inputs to `calculate_tdm()`
-#'
-#' @export
-
-determine_tdm_variables <- function(start_year) {
-  list(
-    t0 = start_year,
-    delta_t1 = 5,
-    delta_t2 = 10,
-    additional_groups = c("scenario_source", "scenario", "allocation", "equity_market", "scenario_geography"),
-    scenarios = tdm_scenarios()
-  )
 }
