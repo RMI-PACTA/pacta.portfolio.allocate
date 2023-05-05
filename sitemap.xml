@@ -49,9 +49,6 @@
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/create_portfolio_subset.html</loc>
   </url>
   <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/determine_tdm_variables.html</loc>
-  </url>
-  <url>
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/get_abcd_raw.html</loc>
   </url>
   <url>
@@ -74,8 +71,5 @@
   </url>
   <url>
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/tdm_conditions_met.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/tdm_scenarios.html</loc>
   </url>
 </urlset>
