@@ -40,7 +40,7 @@ tdm_conditions_met <- function(data,
       .by = (union(crucial_tdm_groups(), additional_groups))
       )
 
-  valid_years_available <- all(has_useable_data_per_group$has_all_years)
+  valid_years_available <- any(has_useable_data_per_group$has_all_years)
 
   return(all(valid_project_code, valid_data_available, valid_years_available))
 }

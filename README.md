@@ -37,7 +37,3 @@ maintained in a series of repositories, each containing the prefix
 
 For example, the transition monitor platform is fuelled by the workflow
 found here: <https://github.com/RMI-PACTA/workflow.transition.monitor>
-
-## Coming Soon
-
-A workflow to allow analysts to easily run PACTA locally…
