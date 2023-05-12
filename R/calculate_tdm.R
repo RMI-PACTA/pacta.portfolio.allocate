@@ -95,7 +95,22 @@ calculate_tdm <- function(data,
     return(warn_zero_rows(tdm_prototype(), warning_message))
   }
 
-  data_with_monotonic_factors <- add_monotonic_factor(filtered_data, t0, delta_t1, delta_t2, groups)
+  tdm_years <- unique(t0, t0 + delta_t1, t0 + delta_t2)
+
+  data_with_relevant_years <- filtered_data %>%
+    dplyr::mutate(
+      has_all_years = all(tdm_years %in% .data$year),
+      .by = (union(crucial_tdm_groups(), additional_groups))
+    ) %>%
+    filter(.data$has_all_years)
+
+  if (nrow(data_with_relevant_years) == 0) {
+    warning_message <- "Filtering for relevant TDM years, outputs 0 rows"
+    write_log(warning_message, file_path = log_path)
+    return(warn_zero_rows(tdm_prototype(), warning_message))
+  }
+
+  data_with_monotonic_factors <- add_monotonic_factor(data_with_relevant_years, t0, delta_t1, delta_t2, groups)
 
   initial_year_data <- dplyr::filter(data_with_monotonic_factors, .data$year == t0)
 
