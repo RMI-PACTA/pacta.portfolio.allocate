@@ -95,7 +95,7 @@ calculate_tdm <- function(data,
     return(warn_zero_rows(tdm_prototype(), warning_message))
   }
 
-  tdm_years <- unique(t0, t0 + delta_t1, t0 + delta_t2)
+  tdm_years <- unique(c(t0, t0 + delta_t1, t0 + delta_t2))
 
   data_with_relevant_years <- filtered_data %>%
     dplyr::mutate(
