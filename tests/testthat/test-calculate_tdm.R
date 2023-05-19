@@ -266,3 +266,17 @@ test_that("outputs expected values if delta_t1 or delta_t2 have non-default valu
   expect_equal(out$scenario$tdm_technology_value, 0.625)
 })
 
+test_that("filters input data for groups where TDM can be calculated (#8)", {
+  t0 <- 2021
+  delta_t1 <- 5
+  delta_t2 <- 9
+
+  input_data <- fake_tdm_data(
+    ald_sector = c("power", "power", "power", "steel"),
+    year = c(t0, t0 + delta_t1, t0 + delta_t2, t0)
+  )
+
+  out <- calculate_tdm(input_data, t0, delta_t1, delta_t2)
+
+  expect_equal(unique(out$ald_sector), "power")
+})
