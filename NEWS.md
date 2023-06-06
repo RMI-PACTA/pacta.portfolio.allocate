@@ -1,4 +1,4 @@
-# pacta.portfolio.allocate (development version)
+# pacta.portfolio.allocate 0.0.2
 
 * loses `tdm_scenarios()` and `determine_tdm_variables()` in favour of defining 
   these parameters explicitly in `workflow.transition.monitor` 
