@@ -1,4 +1,4 @@
-# pacta.portfolio.allocate (development version)
+# pacta.portfolio.allocate 0.0.2
 
 * loses `tdm_scenarios()` and `determine_tdm_variables()` in favour of defining 
   these parameters explicitly in `workflow.transition.monitor` 
@@ -24,4 +24,4 @@
 
 # pacta.portfolio.allocate 0.0.1
 
-* Added a `NEWS.md` file to track changes to the package.
+* Added a `NEWS.md` file to track changes to the package. This package is a hard-fork of [pacta.portfolio.analysis](https://github.com/RMI-PACTA/pacta.portfolio.analysis/commit/3cbc3c1f528e8ec34fbcdd37aa98a6aae330a16d) at commmit `3cbc3c1`.
