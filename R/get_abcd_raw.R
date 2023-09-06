@@ -3,20 +3,14 @@
 #' A longer description of the function
 #'
 #' @param portfolio_type A description of the argument
-#' @param supervisor_workflow A description of the argument
 #'
 #' @return A description of the return value
 #'
 #' @export
 
-get_abcd_raw <- function(portfolio_type, supervisor_workflow = FALSE) {
-  if (supervisor_workflow == TRUE) {
-    filename_eq_raw <- "equity_ald_scenario_map.rds"
-    filename_cb_raw <- "bonds_ald_scenario_map.rds"
-  } else {
-    filename_eq_raw <- "masterdata_ownership_datastore.rds"
-    filename_cb_raw <- "masterdata_debt_datastore.rds"
-  }
+get_abcd_raw <- function(portfolio_type) {
+  filename_eq_raw <- "masterdata_ownership_datastore.rds"
+  filename_cb_raw <- "masterdata_debt_datastore.rds"
 
   if (portfolio_type == "Equity") {
     abcd_raw <- readr::read_rds(file.path(.GlobalEnv$analysis_inputs_path, filename_eq_raw))
@@ -25,7 +19,6 @@ get_abcd_raw <- function(portfolio_type, supervisor_workflow = FALSE) {
   if (portfolio_type == "Bonds") {
     abcd_raw <- readr::read_rds(file.path(.GlobalEnv$analysis_inputs_path, filename_cb_raw))
   }
-
 
   abcd_raw <- abcd_raw %>%
     filter(.data$year %in% seq(.GlobalEnv$start_year, .GlobalEnv$start_year + .GlobalEnv$time_horizon)) %>%
