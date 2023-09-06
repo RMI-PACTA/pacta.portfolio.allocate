@@ -4,12 +4,10 @@
 \alias{get_abcd_raw}
 \title{A short description of the function}
 \usage{
-get_abcd_raw(portfolio_type, supervisor_workflow = FALSE)
+get_abcd_raw(portfolio_type)
 }
 \arguments{
 \item{portfolio_type}{A description of the argument}
-
-\item{supervisor_workflow}{A description of the argument}
 }
 \value{
 A description of the return value
