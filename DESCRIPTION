@@ -31,7 +31,7 @@ Depends:
 Imports: 
     cli,
     DBI,
-    dbplyr (> 2.3.3),
+    dbplyr (>= 2.4.0),
     dplyr (>= 1.1.0),
     fs,
     glue,
