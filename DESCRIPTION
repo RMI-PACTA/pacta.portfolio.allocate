@@ -53,8 +53,7 @@ Suggests:
     withr,
     yaml
 Remotes: 
-    RMI-PACTA/pacta.portfolio.utils,
-    tidyverse/dbplyr
+    RMI-PACTA/pacta.portfolio.utils
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
