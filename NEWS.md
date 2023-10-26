@@ -1,5 +1,7 @@
 # pacta.portfolio.allocate (development version)
 
+* release version of {dbplyr} 2.4.0 or greater is now required
+
 # pacta.portfolio.allocate 0.0.2
 
 * loses `tdm_scenarios()` and `determine_tdm_variables()` in favour of defining 
