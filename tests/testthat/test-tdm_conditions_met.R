@@ -15,7 +15,7 @@ test_that("passes TRUE, if at least one group of data contains all TDM years", {
     delta_t1,
     delta_t2,
     scenarios,
-    project_code = "GENERAL"
+    project_code = "XXX"
     )
 
   expect_equal(out, TRUE)
