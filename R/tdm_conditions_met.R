@@ -21,7 +21,8 @@ tdm_conditions_met <- function(data,
                                project_code,
                                additional_groups = NULL) {
 
-  valid_project_code <- project_code == "GENERAL"
+  # currently, no existing initiatives should have the TDM section
+  valid_project_code <- project_code == "XXX"
 
   useable_data <- data %>%
     filter(.data$allocation == "portfolio_weight") %>%
