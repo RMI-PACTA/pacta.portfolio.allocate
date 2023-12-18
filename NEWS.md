@@ -1,6 +1,7 @@
 # pacta.portfolio.allocate (development version)
 
 * release version of {dbplyr} 2.4.0 or greater is now required
+* removes all TDM related stuff, including functions `calculate_tdm()` and `tdm_conditions_met()`, and the Transition Disruption Metric vignette
 
 # pacta.portfolio.allocate 0.0.2
 
