@@ -10,12 +10,6 @@
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/articles/transition_disruption_metric.html</loc>
-  </url>
-  <url>
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/authors.html</loc>
   </url>
   <url>
@@ -35,9 +29,6 @@
   </url>
   <url>
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_scenario_alignment.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_tdm.html</loc>
   </url>
   <url>
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_technology_share.html</loc>
@@ -68,8 +59,5 @@
   </url>
   <url>
     <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/pw_calculations.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/tdm_conditions_met.html</loc>
   </url>
 </urlset>
