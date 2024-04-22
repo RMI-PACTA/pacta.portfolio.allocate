@@ -1,4 +1,3 @@
 url: https://rmi-pacta.github.io/pacta.portfolio.allocate
 template:
-  bootstrap: 5
   package: pacta.pkgdown.rmitemplate
