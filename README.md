@@ -4,6 +4,7 @@
 
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![R-CMD-check](https://github.com/RMI-PACTA/pacta.portfolio.allocate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/RMI-PACTA/pacta.portfolio.allocate/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/github/RMI-PACTA/pacta.portfolio.allocate/graph/badge.svg?token=UP0NFI3SE8)](https://codecov.io/github/RMI-PACTA/pacta.portfolio.allocate)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/pacta.portfolio.allocate)](https://CRAN.R-project.org/package=pacta.portfolio.allocate)
 [![pacta.portfolio.allocate status
