@@ -1,6 +1,6 @@
 Package: pacta.portfolio.allocate
 Title: pacta.portfolio.allocate
-Version: 0.0.2.9000
+Version: 0.0.2.9001
 Authors@R: 
     c(person(given = "CJ",
              family = "Yetman",
