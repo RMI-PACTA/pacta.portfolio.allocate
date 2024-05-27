@@ -9,7 +9,11 @@
 #'
 #' @export
 
-merge_in_geography <- function(portfolio, ald_raw) {
+merge_in_geography <- function(
+  portfolio,
+  ald_raw,
+  sector_list
+) {
   company_all <- portfolio %>%
     distinct(
       .data$allocation,
@@ -20,7 +24,8 @@ merge_in_geography <- function(portfolio, ald_raw) {
 
 
   company_all <- company_all %>%
-    filter(.data$financial_sector %in% .GlobalEnv$sector_list)
+    filter(.data$financial_sector %in% .env$sector_list),
+  sector_list
 
   ### join with MASTER to get country production
   company_all_data <- left_join(
