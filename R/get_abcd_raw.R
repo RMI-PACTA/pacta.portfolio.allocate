@@ -3,6 +3,12 @@
 #' A longer description of the function
 #'
 #' @param portfolio_type A description of the argument
+#' @param data_path Path to directory containing ABCD Data files
+#' @param start_year Start year of the analysis
+#' @param time_horizon Length of the analysis in years (analysis will run from
+#' `start_year` to `start_year + time_horizon`)
+#' @param sector_list (character) A vector of PACTA sectors to include in the
+#' analysis.
 #'
 #' @return A description of the return value
 #'
