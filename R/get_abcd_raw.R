@@ -3,7 +3,7 @@
 #' A longer description of the function
 #'
 #' @param portfolio_type A description of the argument
-#' @param data_path Path to directory containing ABCD Data files
+#' @param analysis_inputs_path Path to directory containing ABCD Data files
 #' @param start_year Start year of the analysis
 #' @param time_horizon Length of the analysis in years (analysis will run from
 #' `start_year` to `start_year + time_horizon`)
@@ -16,7 +16,7 @@
 
 get_abcd_raw <- function(
   portfolio_type,
-  data_path,
+  analysis_inputs_path,
   start_year,
   time_horizon,
   sector_list
@@ -25,11 +25,11 @@ get_abcd_raw <- function(
   filename_cb_raw <- "masterdata_debt_datastore.rds"
 
   if (portfolio_type == "Equity") {
-    abcd_raw <- readr::read_rds(file.path(data_path, filename_eq_raw))
+    abcd_raw <- readr::read_rds(file.path(analysis_inputs_path, filename_eq_raw))
   }
 
   if (portfolio_type == "Bonds") {
-    abcd_raw <- readr::read_rds(file.path(data_path, filename_cb_raw))
+    abcd_raw <- readr::read_rds(file.path(analysis_inputs_path, filename_cb_raw))
   }
 
   abcd_raw <- abcd_raw %>%
