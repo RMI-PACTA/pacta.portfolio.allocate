@@ -3,26 +3,38 @@
 #' A longer description of the function
 #'
 #' @param portfolio_type A description of the argument
+#' @param analysis_inputs_path Path to directory containing ABCD Data files
+#' @param start_year Start year of the analysis
+#' @param time_horizon Length of the analysis in years (analysis will run from
+#' `start_year` to `start_year + time_horizon`)
+#' @param sector_list (character) A vector of PACTA sectors to include in the
+#' analysis.
 #'
 #' @return A description of the return value
 #'
 #' @export
 
-get_abcd_raw <- function(portfolio_type) {
+get_abcd_raw <- function(
+  portfolio_type,
+  analysis_inputs_path,
+  start_year,
+  time_horizon,
+  sector_list
+) {
   filename_eq_raw <- "masterdata_ownership_datastore.rds"
   filename_cb_raw <- "masterdata_debt_datastore.rds"
 
   if (portfolio_type == "Equity") {
-    abcd_raw <- readr::read_rds(file.path(.GlobalEnv$analysis_inputs_path, filename_eq_raw))
+    abcd_raw <- readr::read_rds(file.path(analysis_inputs_path, filename_eq_raw))
   }
 
   if (portfolio_type == "Bonds") {
-    abcd_raw <- readr::read_rds(file.path(.GlobalEnv$analysis_inputs_path, filename_cb_raw))
+    abcd_raw <- readr::read_rds(file.path(analysis_inputs_path, filename_cb_raw))
   }
 
   abcd_raw <- abcd_raw %>%
-    filter(.data$year %in% seq(.GlobalEnv$start_year, .GlobalEnv$start_year + .GlobalEnv$time_horizon)) %>%
-    filter(.data$ald_sector %in% .GlobalEnv$sector_list) %>%
+    filter(.data$year %in% seq(start_year, start_year + time_horizon)) %>%
+    filter(.data$ald_sector %in% sector_list) %>%
     mutate(
       ald_sector = if_else(
         .data$technology == "Coal",

@@ -4,12 +4,15 @@
 \alias{merge_in_geography}
 \title{A short description of the function}
 \usage{
-merge_in_geography(portfolio, ald_raw)
+merge_in_geography(portfolio, ald_raw, sector_list)
 }
 \arguments{
 \item{portfolio}{A description of the argument}
 
 \item{ald_raw}{A description of the argument}
+
+\item{sector_list}{(character) A vector of PACTA sectors to include in the
+analysis.}
 }
 \value{
 A description of the return value

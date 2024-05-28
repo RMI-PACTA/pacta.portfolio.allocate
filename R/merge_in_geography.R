@@ -4,12 +4,18 @@
 #'
 #' @param portfolio A description of the argument
 #' @param ald_raw A description of the argument
+#' @param sector_list (character) A vector of PACTA sectors to include in the
+#' analysis.
 #'
 #' @return A description of the return value
 #'
 #' @export
 
-merge_in_geography <- function(portfolio, ald_raw) {
+merge_in_geography <- function(
+  portfolio,
+  ald_raw,
+  sector_list
+) {
   company_all <- portfolio %>%
     distinct(
       .data$allocation,
@@ -20,7 +26,7 @@ merge_in_geography <- function(portfolio, ald_raw) {
 
 
   company_all <- company_all %>%
-    filter(.data$financial_sector %in% .GlobalEnv$sector_list)
+    filter(.data$financial_sector %in% sector_list)
 
   ### join with MASTER to get country production
   company_all_data <- left_join(
