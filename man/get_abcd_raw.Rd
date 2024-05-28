@@ -4,12 +4,18 @@
 \alias{get_abcd_raw}
 \title{A short description of the function}
 \usage{
-get_abcd_raw(portfolio_type, data_path, start_year, time_horizon, sector_list)
+get_abcd_raw(
+  portfolio_type,
+  analysis_inputs_path,
+  start_year,
+  time_horizon,
+  sector_list
+)
 }
 \arguments{
 \item{portfolio_type}{A description of the argument}
 
-\item{data_path}{Path to directory containing ABCD Data files}
+\item{analysis_inputs_path}{Path to directory containing ABCD Data files}
 
 \item{start_year}{Start year of the analysis}
 
