@@ -51,13 +51,37 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_abcd_raw</span><span class="op">(</span><span class="va">portfolio_type</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">get_abcd_raw</span><span class="op">(</span></span>
+<span>  <span class="va">portfolio_type</span>,</span>
+<span>  <span class="va">analysis_inputs_path</span>,</span>
+<span>  <span class="va">start_year</span>,</span>
+<span>  <span class="va">time_horizon</span>,</span>
+<span>  <span class="va">sector_list</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
     <dl><dt>portfolio_type</dt>
 <dd><p>A description of the argument</p></dd>
+
+
+<dt>analysis_inputs_path</dt>
+<dd><p>Path to directory containing ABCD Data files</p></dd>
+
+
+<dt>start_year</dt>
+<dd><p>Start year of the analysis</p></dd>
+
+
+<dt>time_horizon</dt>
+<dd><p>Length of the analysis in years (analysis will run from
+<code>start_year</code> to <code>start_year + time_horizon</code>)</p></dd>
+
+
+<dt>sector_list</dt>
+<dd><p>(character) A vector of PACTA sectors to include in the
+analysis.</p></dd>
 
 </dl></div>
     <div class="section level2">
