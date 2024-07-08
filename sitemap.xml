@@ -1,63 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/404.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/aggregate_company.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/aggregate_map_data.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/aggregate_portfolio.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_scenario_alignment.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_technology_share.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_weights.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/create_portfolio_subset.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/get_abcd_raw.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/merge_abcd_from_db.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/merge_in_geography.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/ownership_allocation.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/port_weight_allocation.html</loc>
-  </url>
-  <url>
-    <loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/pw_calculations.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/404.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/LICENSE-text.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/LICENSE.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/authors.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/index.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/news/index.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/aggregate_company.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/aggregate_map_data.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/aggregate_portfolio.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_scenario_alignment.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_technology_share.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/calculate_weights.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/create_portfolio_subset.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/get_abcd_raw.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/index.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/merge_abcd_from_db.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/merge_in_geography.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/ownership_allocation.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/port_weight_allocation.html</loc></url>
+<url><loc>https://rmi-pacta.github.io/pacta.portfolio.allocate/reference/pw_calculations.html</loc></url>
 </urlset>
+
