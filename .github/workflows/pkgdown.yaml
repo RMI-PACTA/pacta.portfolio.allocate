@@ -8,6 +8,14 @@ on:
   release:
     types: [published]
   workflow_dispatch:
+    inputs:
+      clean:
+        type: boolean
+        description: 'Clean all files from old site.'
+        default: false
+
+env:
+  CLEAN: ${{ github.event_name == 'workflow_dispatch' && inputs.clean || 'false' }}
 
 name: pkgdown.yml
 
@@ -45,6 +53,6 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
-          clean: true
+          clean: ${{ env.CLEAN == 'true' && true || false }}
           branch: gh-pages
           folder: docs
