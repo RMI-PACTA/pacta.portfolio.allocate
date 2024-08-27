@@ -14,9 +14,6 @@ on:
         description: 'Clean all files from old site.'
         default: false
 
-env:
-  CLEAN: ${{ github.event_name == 'workflow_dispatch' && inputs.clean || 'false' }}
-
 name: pkgdown.yml
 
 permissions: read-all
@@ -53,6 +50,6 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
-          clean: ${{ env.CLEAN == 'true' && true || false }}
+          clean: ${{ github.event_name == 'workflow_dispatch' && inputs.clean || false }}
           branch: gh-pages
           folder: docs
