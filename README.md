@@ -8,7 +8,7 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/pacta.portfolio.allocate)](https://CRAN.R-project.org/package=pacta.portfolio.allocate)
 [![pacta.portfolio.allocate status
-badge](https://rmi-pacta.r-universe.dev/badges/pacta.portfolio.allocate)](https://rmi-pacta.r-universe.dev/ui#package:pacta.portfolio.allocate)
+badge](https://rmi-pacta.r-universe.dev/badges/pacta.portfolio.allocate)](https://rmi-pacta.r-universe.dev/pacta.portfolio.allocate)
 <!-- badges: end -->
 
 The goal of pacta.portfolio.allocate is to provide all the functions and
