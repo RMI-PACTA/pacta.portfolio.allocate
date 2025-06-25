@@ -32,5 +32,4 @@ be composed in particular configuration. These configurations are
 maintained in a series of repositories, each containing the prefix
 `workflow.*`.
 
-For example, the transition monitor platform is fuelled by the workflow
-found here: <https://github.com/RMI-PACTA/workflow.transition.monitor>
+For example, the workflow found here: <https://github.com/RMI-PACTA/workflow.transition.monitor>
